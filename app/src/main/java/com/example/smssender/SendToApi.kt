@@ -13,7 +13,7 @@ public class SendToApi {
 
     public suspend fun sendRequest(senderAddress: String, messageBody: String): String =
         withContext(Dispatchers.IO) {
-            val apiUrl = "https://test3.2111190.click/api/msg/$senderAddress/$messageBody"
+            val apiUrl = "https://example.com/savemsg/$senderAddress/$messageBody"
 
             val client = OkHttpClient()
 
